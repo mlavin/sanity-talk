@@ -1,0 +1,6 @@
+Jinja2==2.6
+Markdown==2.2.0
+Pygments==1.5
+argparse==1.2.1
+docutils==0.9.1
+landslide==1.0.1
