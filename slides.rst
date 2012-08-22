@@ -27,11 +27,11 @@ Who Am I?
 
 ----
 
-My Projects
+Apps I've Open Sourced
 -------------------------------------------------
 
 - django-selectable
-- argyle
+- django-email-bandit
 - django-ad-code
 - django-all-access
 - django-scribbler
@@ -213,6 +213,39 @@ Or else no one (including you) will run them
 
 ----
 
+Sample Project Anti-Pattern
+-------------------------------------------------
+
+- Tests should ship with your app
+- An example project should not
+
+...Therefore your tests must run without it
+
+Presenter Notes
+---------------
+
+- Therefore your tests must run without it
+
+----
+
+Test Only Models
+-------------------------------------------------
+
+`Ticket #7835 <https://code.djangoproject.com/ticket/7835>`_
+
+    ...it appears to me that we already have a pretty good working solution for test-only models in trunk (and I'm wondering why I never thought of it). Apparently you can simply define models directly in your tests.py. Syncdb never imports tests.py, so those models won't get synced to the normal db, but they will get synced to the test database, and can be used in tests.
+
+    -- Carl Meyer (Comment #24)
+
+This approach is already used for Django's own test suite in ``contrib.contenttypes``
+
+Presenter Notes
+---------------
+
+- If this changes you'll know because you're going to have a test suite
+
+----
+
 Configuring Settings for Your App
 -------------------------------------------------
 
@@ -220,7 +253,6 @@ Configuring Settings for Your App
 
     #!/usr/bin/env python
     import sys
-
     from django.conf import settings
 
     if not settings.configured:
@@ -235,6 +267,7 @@ Configuring Settings for Your App
                 'something', # Don't forget dependencies
             ),
             SECRET_KEY='something-secret',
+            SITE_ID=1,
             ROOT_URLCONF='something.tests.urls', # If needed
         )
 
@@ -243,8 +276,7 @@ Configuring Settings for Your App
     def runtests():
         TestRunner = get_runner(settings)
         test_runner = TestRunner(verbosity=1, interactive=True, failfast=False)
-        failures = test_runner.run_tests(['something', ])
-        sys.exit(failures)
+        sys.exit(test_runner.run_tests(['something', ]))
 
     if __name__ == '__main__':
         runtests()
