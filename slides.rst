@@ -24,10 +24,6 @@ Who Am I?
 
 - Developer at Caktus Group in Carrboro, NC
 - Founder/Developer for brewedbyus.com
-- Husband
-- Dad
-- Runner/Triathlete
-- Homebrewer
 
 ----
 
@@ -45,17 +41,25 @@ My Projects
 
 ----
 
+Non-Work Me
+-------------------------------------------------
+
+- Husband/Dad
+- Runner/Triathlete
+- Homebrewer
+
+Presenter Notes
+---------------
+
+- This is also about how to do it all
+
+----
+
 Packaging
 -------------------------------------------------
 
 .. image:: ./images/1411998505_20c38def70_z.jpg
     :align: center
-
-
-Presenter Notes
----------------
-
-http://www.flickr.com/photos/feesta/1411998505/
 
 ----
 
@@ -150,11 +154,6 @@ Documentation
 .. image:: ./images/4294079_e959b6104d.jpg
     :align: center
 
-Presenter Notes
----------------
-
-http://www.flickr.com/photos/plindberg/4294079/
-
 ----
 
 Getting Started with Sphinx
@@ -198,11 +197,6 @@ Testing
 -------------------------------------------------
 
 .. image:: ./images/6946913449_e8ac6ff7d7_z.jpg
-
-Presenter Notes
----------------
-
-http://www.flickr.com/photos/snre/6946913449/
 
 ----
 
@@ -365,4 +359,21 @@ Developer Burnout
 -------------------------------------------------
 
 - It's ok to step away for awhile
+
+----
+
+Photos Credits
+-------------------------------------------------
+
+- http://www.flickr.com/photos/feesta/1411998505/
+- http://www.flickr.com/photos/plindberg/4294079/
+- http://www.flickr.com/photos/snre/6946913449/
+
+----
+
+Slide Info
+-------------------------------------------------
+
+- HTML: http://mlavin.github.com/sanity-talk/
+- Source: https://github.com/mlavin/sanity-talk
 
