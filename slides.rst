@@ -11,6 +11,8 @@ Mark Lavin
 What This Talk is About
 -------------------------------------------------
 
+Things that you won't find in the Django docs like
+
 - Packaging an app
 - Documentating an app
 - Testing an app
@@ -21,7 +23,14 @@ Who Am I?
 -------------------------------------------------
 
 - Developer at Caktus Group in Carrboro, NC
+
+.. image:: ./images/caktus-logo.png
+    :align: center
+
 - Founder/Developer for brewedbyus.com
+
+.. image:: ./images/bbus-logo.png
+    :align: center
 
 ----
 
@@ -175,7 +184,7 @@ Presenter Notes
 Laying Out Your Docs
 -------------------------------------------------
 
-- ``sphinx-quickstart`` has fairly sane defaults
+``sphinx-quickstart`` has fairly sane defaults
 
 .. code-block:: bash
 
@@ -216,6 +225,7 @@ Testing
 -------------------------------------------------
 
 .. image:: ./images/6946913449_e8ac6ff7d7_z.jpg
+    :align: center
 
 ----
 
@@ -307,17 +317,17 @@ Running App Tests (runtests.py)
 Supercharge Your Tests with Tox
 -------------------------------------------------
 
-- Tox uses virtualenv to run a test matrix
-- Test different Python versions
-- Test different Django versions
-- Test different DB backends
-- http://tox.readthedocs.org/
-
 Install tox
 
 .. code-block:: bash
 
     pip install tox
+
+- Tox uses virtualenv to run a test matrix
+- Test different Python versions
+- Test different Django versions
+- Test different DB backends
+- http://tox.readthedocs.org/
 
 ----
 
@@ -366,12 +376,35 @@ Presenter Notes
 
 ----
 
+App Template
+-------------------------------------------------
+
+- Django 1.4 added app templates for ``startapp``
+- I've created one using these ideas
+- Use it/fork it for your next app
+- https://github.com/mlavin/django-app-template
+
+Presenter Notes
+---------------
+
+- I've made it easy for you so you have no excuse
+
+----
+
 Why Bother?
 -------------------------------------------------
 
 - These tools make it easy on you to write better code and docs
 - And make it easier for others to help you
 - Give contributors a starting point for more docs and tests
+
+----
+
+Non-Code This To Do
+-------------------------------------------------
+
+.. image:: ./images/3944131005_d0563d76ac.jpg
+    :align: center
 
 ----
 
@@ -397,6 +430,14 @@ Prepare for The Future
 - Be ready for new Django releases
 - Be ready for Python 3
 - Be ready to be replaced (yourself or your code)
+
+----
+
+Non-Code This To Avoid
+-------------------------------------------------
+
+.. image:: ./images/3415590901_b3fb25fcca.jpg
+    :align: center
 
 ----
 
@@ -426,6 +467,7 @@ Accepting Every Contribution
 -------------------------------------------------
 
 - Adding features is easy but taking them away is hard
+- If you accept it you should be prepared to maintain it
 
 ----
 
@@ -433,15 +475,13 @@ Developer Burnout
 -------------------------------------------------
 
 - It's ok to step away for awhile
+- If you have these tools in place others can pick up in your place
 
-----
+Presenter Notes
+---------------
 
-Photos Credits
--------------------------------------------------
-
-- http://www.flickr.com/photos/feesta/1411998505/
-- http://www.flickr.com/photos/plindberg/4294079/
-- http://www.flickr.com/photos/snre/6946913449/
+- These things should make it easier
+- Don't let open source feel like a burden
 
 ----
 
@@ -457,4 +497,15 @@ Me
 
 - Github: https://github.com/mlavin/
 - Bitbucket: https://bitbucket.com/mlavin/
+
+----
+
+Photo Credits
+-------------------------------------------------
+
+- http://www.flickr.com/photos/feesta/1411998505/
+- http://www.flickr.com/photos/plindberg/4294079/
+- http://www.flickr.com/photos/snre/6946913449/
+- http://www.flickr.com/photos/booleansplit/3944131005/
+- http://www.flickr.com/photos/jmarty/3415590901/
 
