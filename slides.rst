@@ -376,21 +376,6 @@ Presenter Notes
 
 ----
 
-App Template
--------------------------------------------------
-
-- Django 1.4 added app templates for ``startapp``
-- I've created one using these ideas
-- Use it/fork it for your next app
-- https://github.com/mlavin/django-app-template
-
-Presenter Notes
----------------
-
-- I've made it easy for you so you have no excuse
-
-----
-
 Why Bother?
 -------------------------------------------------
 
@@ -482,6 +467,21 @@ Presenter Notes
 
 - These things should make it easier
 - Don't let open source feel like a burden
+
+----
+
+App Template
+-------------------------------------------------
+
+- Django 1.4 added app templates for ``startapp``
+- I've created one using these ideas
+- Use it/fork it for your next app
+- https://github.com/mlavin/django-app-template
+
+Presenter Notes
+---------------
+
+- I've made it easy for you so you have no excuse
 
 ----
 
