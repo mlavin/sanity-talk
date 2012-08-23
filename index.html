@@ -57,8 +57,7 @@
             
             
             <section><h1>While Maintaining Your Open Source App</h1>
-<p>Mark Lavin</p>
-<p>Caktus Consulting Group</p></section>
+<p>Mark Lavin</p></section>
             
           </div>
           <div class="presenter_notes">
@@ -74,7 +73,7 @@
             </aside>
             
             <aside class="page_number">
-              1/31
+              1/37
             </aside>
           </footer>
         </div>
@@ -88,7 +87,8 @@
             <header><h1>What This Talk is About</h1></header>
             
             
-            <section><ul class="simple">
+            <section><p>Things that you won't find in the Django docs like</p>
+<ul class="simple">
 <li>Packaging an app</li>
 <li>Documentating an app</li>
 <li>Testing an app</li>
@@ -108,7 +108,7 @@
             </aside>
             
             <aside class="page_number">
-              2/31
+              2/37
             </aside>
           </footer>
         </div>
@@ -124,8 +124,12 @@
             
             <section><ul class="simple">
 <li>Developer at Caktus Group in Carrboro, NC</li>
+</ul>
+<img alt="./images/caktus-logo.png" class="align-center" src="./images/caktus-logo.png" />
+<ul class="simple">
 <li>Founder/Developer for brewedbyus.com</li>
-</ul></section>
+</ul>
+<img alt="./images/bbus-logo.png" class="align-center" src="./images/bbus-logo.png" /></section>
             
           </div>
           <div class="presenter_notes">
@@ -141,7 +145,7 @@
             </aside>
             
             <aside class="page_number">
-              3/31
+              3/37
             </aside>
           </footer>
         </div>
@@ -152,16 +156,17 @@
         <div class="slide">
           <div class="inner">
             
-            <header><h1>My Projects</h1></header>
+            <header><h1>Apps I've Open Sourced</h1></header>
             
             
             <section><ul class="simple">
 <li>django-selectable</li>
-<li>argyle</li>
+<li>django-email-bandit</li>
 <li>django-ad-code</li>
 <li>django-all-access</li>
 <li>django-scribbler</li>
 <li>django-responsive</li>
+<li>django-hilbert</li>
 <li>django-lastfm-auth</li>
 <li>django-meetup-auth</li>
 </ul></section>
@@ -180,7 +185,7 @@
             </aside>
             
             <aside class="page_number">
-              4/31
+              4/37
             </aside>
           </footer>
         </div>
@@ -221,7 +226,7 @@
             </aside>
             
             <aside class="page_number">
-              5/31
+              5/37
             </aside>
           </footer>
         </div>
@@ -251,7 +256,7 @@
             </aside>
             
             <aside class="page_number">
-              6/31
+              6/37
             </aside>
           </footer>
         </div>
@@ -285,45 +290,7 @@
             </aside>
             
             <aside class="page_number">
-              7/31
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: slides.rst -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>Application Version</h1></header>
-            
-            
-            <section><ul class="simple">
-<li>Follow PEP386</li>
-<li>Try to be consistent in what your versions mean (new features/bug fixes)</li>
-</ul>
-<pre><span class="c"># something.__init__.py</span>
-<span class="s">&quot;Short description of django-something.&quot;</span>
-
-<span class="n">__version__</span> <span class="o">=</span> <span class="s">&#39;1.0.0&#39;</span>
-</pre></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="slides.rst">slides.rst</a>
-            </aside>
-            
-            <aside class="page_number">
-              8/31
+              7/37
             </aside>
           </footer>
         </div>
@@ -362,6 +329,7 @@
         <span class="s">&#39;Operating System :: OS Independent&#39;</span><span class="p">,</span>
     <span class="p">],</span>
     <span class="n">long_description</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s">&#39;README.rst&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span>
+    <span class="n">zip_safe</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="c"># If you have static resources</span>
 <span class="p">)</span>
 </pre></section>
             
@@ -379,7 +347,45 @@
             </aside>
             
             <aside class="page_number">
-              9/31
+              8/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides.rst -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Application Version</h1></header>
+            
+            
+            <section><ul class="simple">
+<li>Follow PEP386</li>
+<li>Try to be consistent in what your versions mean (new features/bug fixes)</li>
+</ul>
+<pre><span class="c"># something.__init__.py</span>
+<span class="s">&quot;Short description of django-something.&quot;</span>
+
+<span class="n">__version__</span> <span class="o">=</span> <span class="s">&#39;1.0.0&#39;</span>
+</pre></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.rst">slides.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              9/37
             </aside>
           </footer>
         </div>
@@ -415,7 +421,7 @@
             </aside>
             
             <aside class="page_number">
-              10/31
+              10/37
             </aside>
           </footer>
         </div>
@@ -435,7 +441,8 @@ python setup.py sdist upload
 <span class="c"># Write more docs</span>
 <span class="c"># Update version</span>
 python setup.py sdist upload
-</pre></section>
+</pre>
+<p>That's it!</p></section>
             
           </div>
           <div class="presenter_notes">
@@ -451,7 +458,7 @@ python setup.py sdist upload
             </aside>
             
             <aside class="page_number">
-              11/31
+              11/37
             </aside>
           </footer>
         </div>
@@ -481,7 +488,7 @@ python setup.py sdist upload
             </aside>
             
             <aside class="page_number">
-              12/31
+              12/37
             </aside>
           </footer>
         </div>
@@ -499,12 +506,19 @@ python setup.py sdist upload
 <li>A README is not documentation</li>
 <li>Auto-docs are not documentation</li>
 <li>Also don't need to be perfect but you need a starting point</li>
-</ul></section>
+</ul>
+
+
+</section>
             
           </div>
           <div class="presenter_notes">
             <header><h1>Presenter Notes</h1></header>
             <section>
+            
+              <ul class="simple">
+<li>People will help you write better docs but they won't start them for you</li>
+</ul>
             
             </section>
           </div>
@@ -515,7 +529,7 @@ python setup.py sdist upload
             </aside>
             
             <aside class="page_number">
-              13/31
+              13/37
             </aside>
           </footer>
         </div>
@@ -529,10 +543,13 @@ python setup.py sdist upload
             <header><h1>Laying Out Your Docs</h1></header>
             
             
-            <section><ul class="simple">
-<li>Create a <tt class="docutils literal">docs</tt> directory in your repo</li>
-<li><tt class="docutils literal"><span class="pre">sphinx-quickstart</span></tt> has fairly sane defaults</li>
-</ul></section>
+            <section><p><tt class="docutils literal"><span class="pre">sphinx-quickstart</span></tt> has fairly sane defaults</p>
+<pre><span class="nv">$ </span>sphinx-quickstart
+...
+Enter the root path <span class="k">for </span>documentation.
+&gt; Root path <span class="k">for </span>the documentation <span class="o">[</span>.<span class="o">]</span>: docs
+...
+</pre></section>
             
           </div>
           <div class="presenter_notes">
@@ -548,7 +565,7 @@ python setup.py sdist upload
             </aside>
             
             <aside class="page_number">
-              14/31
+              14/37
             </aside>
           </footer>
         </div>
@@ -566,7 +583,7 @@ python setup.py sdist upload
 <li>A description of the project and its goals</li>
 <li>How to install including requirements</li>
 <li>How to configure</li>
-<li>Change log/Release notes</li>
+<li>Release notes</li>
 </ul></section>
             
           </div>
@@ -583,7 +600,7 @@ python setup.py sdist upload
             </aside>
             
             <aside class="page_number">
-              15/31
+              15/37
             </aside>
           </footer>
         </div>
@@ -601,13 +618,20 @@ python setup.py sdist upload
 <li>Create an account</li>
 <li>Link to your repo</li>
 <li>Setup post-commit hook</li>
-<li><em>Magic</em></li>
-</ul></section>
+<li>Pulls your tags/branches for different versions</li>
+</ul>
+
+
+</section>
             
           </div>
           <div class="presenter_notes">
             <header><h1>Presenter Notes</h1></header>
             <section>
+            
+              <ul class="simple">
+<li>Django's docs are built here too</li>
+</ul>
             
             </section>
           </div>
@@ -618,7 +642,7 @@ python setup.py sdist upload
             </aside>
             
             <aside class="page_number">
-              16/31
+              16/37
             </aside>
           </footer>
         </div>
@@ -632,7 +656,7 @@ python setup.py sdist upload
             <header><h1>Testing</h1></header>
             
             
-            <section><img alt="./images/6946913449_e8ac6ff7d7_z.jpg" src="./images/6946913449_e8ac6ff7d7_z.jpg" /></section>
+            <section><img alt="./images/6946913449_e8ac6ff7d7_z.jpg" class="align-center" src="./images/6946913449_e8ac6ff7d7_z.jpg" /></section>
             
           </div>
           <div class="presenter_notes">
@@ -648,7 +672,7 @@ python setup.py sdist upload
             </aside>
             
             <aside class="page_number">
-              17/31
+              17/37
             </aside>
           </footer>
         </div>
@@ -686,7 +710,7 @@ python setup.py sdist upload
             </aside>
             
             <aside class="page_number">
-              18/31
+              18/37
             </aside>
           </footer>
         </div>
@@ -697,12 +721,96 @@ python setup.py sdist upload
         <div class="slide">
           <div class="inner">
             
-            <header><h1>Configuring Settings for Your App</h1></header>
+            <header><h1>Sample Project Anti-Pattern</h1></header>
+            
+            
+            <section><ul class="simple">
+<li>Tests should ship with your app</li>
+<li>An example project should not</li>
+</ul>
+<p>...Therefore your tests must run without it</p>
+
+
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul class="simple">
+<li>Therefore your tests must run without it</li>
+<li>People seem to do this because they need models</li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.rst">slides.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              19/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides.rst -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Test Only Models</h1></header>
+            
+            
+            <section><p><a class="reference external" href="https://code.djangoproject.com/ticket/7835">Ticket #7835</a></p>
+<blockquote>
+<p>...it appears to me that we already have a pretty good working solution for test-only models in trunk (and I'm wondering why I never thought of it). Apparently you can simply define models directly in your tests.py. Syncdb never imports tests.py, so those models won't get synced to the normal db, but they will get synced to the test database, and can be used in tests.</p>
+<p class="attribution">&mdash;Carl Meyer (Comment #24)</p>
+</blockquote>
+<p>This approach is already used for Django's own test suite in <tt class="docutils literal">contrib.contenttypes</tt></p>
+
+
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul class="simple">
+<li>This is used by django-selectable</li>
+<li>If this changes you'll know because you're going to have a test suite</li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.rst">slides.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              20/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides.rst -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Running App Tests (runtests.py)</h1></header>
             
             
             <section><pre><span class="c">#!/usr/bin/env python</span>
 <span class="kn">import</span> <span class="nn">sys</span>
-
 <span class="kn">from</span> <span class="nn">django.conf</span> <span class="kn">import</span> <span class="n">settings</span>
 
 <span class="k">if</span> <span class="ow">not</span> <span class="n">settings</span><span class="o">.</span><span class="n">configured</span><span class="p">:</span>
@@ -717,6 +825,7 @@ python setup.py sdist upload
             <span class="s">&#39;something&#39;</span><span class="p">,</span> <span class="c"># Don&#39;t forget dependencies</span>
         <span class="p">),</span>
         <span class="n">SECRET_KEY</span><span class="o">=</span><span class="s">&#39;something-secret&#39;</span><span class="p">,</span>
+        <span class="n">SITE_ID</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
         <span class="n">ROOT_URLCONF</span><span class="o">=</span><span class="s">&#39;something.tests.urls&#39;</span><span class="p">,</span> <span class="c"># If needed</span>
     <span class="p">)</span>
 
@@ -725,8 +834,7 @@ python setup.py sdist upload
 <span class="k">def</span> <span class="nf">runtests</span><span class="p">():</span>
     <span class="n">TestRunner</span> <span class="o">=</span> <span class="n">get_runner</span><span class="p">(</span><span class="n">settings</span><span class="p">)</span>
     <span class="n">test_runner</span> <span class="o">=</span> <span class="n">TestRunner</span><span class="p">(</span><span class="n">verbosity</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">interactive</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">failfast</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
-    <span class="n">failures</span> <span class="o">=</span> <span class="n">test_runner</span><span class="o">.</span><span class="n">run_tests</span><span class="p">([</span><span class="s">&#39;something&#39;</span><span class="p">,</span> <span class="p">])</span>
-    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">failures</span><span class="p">)</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">test_runner</span><span class="o">.</span><span class="n">run_tests</span><span class="p">([</span><span class="s">&#39;something&#39;</span><span class="p">,</span> <span class="p">]))</span>
 
 <span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&#39;__main__&#39;</span><span class="p">:</span>
     <span class="n">runtests</span><span class="p">()</span>
@@ -746,7 +854,7 @@ python setup.py sdist upload
             </aside>
             
             <aside class="page_number">
-              19/31
+              21/37
             </aside>
           </footer>
         </div>
@@ -760,11 +868,15 @@ python setup.py sdist upload
             <header><h1>Supercharge Your Tests with Tox</h1></header>
             
             
-            <section><ul class="simple">
+            <section><p>Install tox</p>
+<pre>pip install tox
+</pre>
+<ul class="simple">
 <li>Tox uses virtualenv to run a test matrix</li>
 <li>Test different Python versions</li>
 <li>Test different Django versions</li>
 <li>Test different DB backends</li>
+<li><a class="reference external" href="http://tox.readthedocs.org/">http://tox.readthedocs.org/</a></li>
 </ul></section>
             
           </div>
@@ -781,7 +893,7 @@ python setup.py sdist upload
             </aside>
             
             <aside class="page_number">
-              20/31
+              22/37
             </aside>
           </footer>
         </div>
@@ -795,7 +907,8 @@ python setup.py sdist upload
             <header><h1>Basic Tox Configuration</h1></header>
             
             
-            <section><pre>[tox]
+            <section><p>Configure tox.ini</p>
+<pre>[tox]
 downloadcache = {toxworkdir}/_download/
 envlist = py26-1.4.X,py26-1.3.X
 
@@ -809,12 +922,6 @@ deps = django&gt;=1.4,&lt;1.5
 [testenv:py26-1.3.X]
 basepython = python2.6
 deps = django&gt;=1.3,&lt;1.4
-</pre>
-<p>Running tox</p>
-<pre><span class="c"># All environments</span>
-tox
-<span class="c"># Only 1.4 on Python 2.6</span>
-tox -e py26-1.4.X
 </pre></section>
             
           </div>
@@ -831,7 +938,93 @@ tox -e py26-1.4.X
             </aside>
             
             <aside class="page_number">
-              21/31
+              23/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides.rst -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Running Tox</h1></header>
+            
+            
+            <section><pre><span class="c"># All environments</span>
+<span class="nv">$ </span>tox
+...
+<span class="o">[</span>TOX<span class="o">]</span> py26-1.4.X: commands succeeded
+<span class="o">[</span>TOX<span class="o">]</span> py26-1.3.X: commands succeeded
+<span class="c"># Only 1.4 on Python 2.6</span>
+<span class="nv">$ </span>tox -e py26-1.4.X
+</pre>
+
+
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul class="simple">
+<li>You can also use tox to build your documentation</li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.rst">slides.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              24/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides.rst -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>App Template</h1></header>
+            
+            
+            <section><ul class="simple">
+<li>Django 1.4 added app templates for <tt class="docutils literal">startapp</tt></li>
+<li>I've created one using these ideas</li>
+<li>Use it/fork it for your next app</li>
+<li><a class="reference external" href="https://github.com/mlavin/django-app-template">https://github.com/mlavin/django-app-template</a></li>
+</ul>
+
+
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul class="simple">
+<li>I've made it easy for you so you have no excuse</li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.rst">slides.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              25/37
             </aside>
           </footer>
         </div>
@@ -865,7 +1058,37 @@ tox -e py26-1.4.X
             </aside>
             
             <aside class="page_number">
-              22/31
+              26/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides.rst -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Non-Code This To Do</h1></header>
+            
+            
+            <section><img alt="./images/3944131005_d0563d76ac.jpg" class="align-center" src="./images/3944131005_d0563d76ac.jpg" /></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.rst">slides.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              27/37
             </aside>
           </footer>
         </div>
@@ -898,7 +1121,7 @@ tox -e py26-1.4.X
             </aside>
             
             <aside class="page_number">
-              23/31
+              28/37
             </aside>
           </footer>
         </div>
@@ -931,7 +1154,7 @@ tox -e py26-1.4.X
             </aside>
             
             <aside class="page_number">
-              24/31
+              29/37
             </aside>
           </footer>
         </div>
@@ -965,7 +1188,37 @@ tox -e py26-1.4.X
             </aside>
             
             <aside class="page_number">
-              25/31
+              30/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides.rst -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Non-Code This To Avoid</h1></header>
+            
+            
+            <section><img alt="./images/3415590901_b3fb25fcca.jpg" class="align-center" src="./images/3415590901_b3fb25fcca.jpg" /></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.rst">slides.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              31/37
             </aside>
           </footer>
         </div>
@@ -998,7 +1251,7 @@ tox -e py26-1.4.X
             </aside>
             
             <aside class="page_number">
-              26/31
+              32/37
             </aside>
           </footer>
         </div>
@@ -1036,7 +1289,7 @@ tox -e py26-1.4.X
             </aside>
             
             <aside class="page_number">
-              27/31
+              33/37
             </aside>
           </footer>
         </div>
@@ -1052,6 +1305,7 @@ tox -e py26-1.4.X
             
             <section><ul class="simple">
 <li>Adding features is easy but taking them away is hard</li>
+<li>If you accept it you should be prepared to maintain it</li>
 </ul></section>
             
           </div>
@@ -1068,7 +1322,7 @@ tox -e py26-1.4.X
             </aside>
             
             <aside class="page_number">
-              28/31
+              34/37
             </aside>
           </footer>
         </div>
@@ -1084,6 +1338,54 @@ tox -e py26-1.4.X
             
             <section><ul class="simple">
 <li>It's ok to step away for awhile</li>
+<li>If you have these tools in place others can pick up in your place</li>
+</ul>
+
+
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul class="simple">
+<li>These things should make it easier</li>
+<li>Don't let open source feel like a burden</li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.rst">slides.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              35/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides.rst -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Info</h1></header>
+            
+            
+            <section><p>Slides</p>
+<ul class="simple">
+<li>HTML: <a class="reference external" href="http://mlavin.github.com/sanity-talk/">http://mlavin.github.com/sanity-talk/</a></li>
+<li>Source: <a class="reference external" href="https://github.com/mlavin/sanity-talk">https://github.com/mlavin/sanity-talk</a></li>
+</ul>
+<p>Me</p>
+<ul class="simple">
+<li>Github: <a class="reference external" href="https://github.com/mlavin/">https://github.com/mlavin/</a></li>
+<li>Bitbucket: <a class="reference external" href="https://bitbucket.com/mlavin/">https://bitbucket.com/mlavin/</a></li>
 </ul></section>
             
           </div>
@@ -1100,7 +1402,7 @@ tox -e py26-1.4.X
             </aside>
             
             <aside class="page_number">
-              29/31
+              36/37
             </aside>
           </footer>
         </div>
@@ -1111,13 +1413,15 @@ tox -e py26-1.4.X
         <div class="slide">
           <div class="inner">
             
-            <header><h1>Photos Credits</h1></header>
+            <header><h1>Photo Credits</h1></header>
             
             
             <section><ul class="simple">
 <li><a class="reference external" href="http://www.flickr.com/photos/feesta/1411998505/">http://www.flickr.com/photos/feesta/1411998505/</a></li>
 <li><a class="reference external" href="http://www.flickr.com/photos/plindberg/4294079/">http://www.flickr.com/photos/plindberg/4294079/</a></li>
 <li><a class="reference external" href="http://www.flickr.com/photos/snre/6946913449/">http://www.flickr.com/photos/snre/6946913449/</a></li>
+<li><a class="reference external" href="http://www.flickr.com/photos/booleansplit/3944131005/">http://www.flickr.com/photos/booleansplit/3944131005/</a></li>
+<li><a class="reference external" href="http://www.flickr.com/photos/jmarty/3415590901/">http://www.flickr.com/photos/jmarty/3415590901/</a></li>
 </ul></section>
             
           </div>
@@ -1134,40 +1438,7 @@ tox -e py26-1.4.X
             </aside>
             
             <aside class="page_number">
-              30/31
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: slides.rst -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>Slide Info</h1></header>
-            
-            
-            <section><ul class="simple">
-<li>HTML: <a class="reference external" href="http://mlavin.github.com/sanity-talk/">http://mlavin.github.com/sanity-talk/</a></li>
-<li>Source: <a class="reference external" href="https://github.com/mlavin/sanity-talk">https://github.com/mlavin/sanity-talk</a></li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="slides.rst">slides.rst</a>
-            </aside>
-            
-            <aside class="page_number">
-              31/31
+              37/37
             </aside>
           </footer>
         </div>
@@ -1200,7 +1471,7 @@ tox -e py26-1.4.X
       
       
       <tr id="toc-row-4">
-        <th><a href="#slide4">My Projects</a></th>
+        <th><a href="#slide4">Apps I've Open Sourced</a></th>
         <td><a href="#slide4">4</a></td>
       </tr>
       
@@ -1224,13 +1495,13 @@ tox -e py26-1.4.X
       
       
       <tr id="toc-row-8">
-        <th><a href="#slide8">Application Version</a></th>
+        <th><a href="#slide8">Setup.py</a></th>
         <td><a href="#slide8">8</a></td>
       </tr>
       
       
       <tr id="toc-row-9">
-        <th><a href="#slide9">Setup.py</a></th>
+        <th><a href="#slide9">Application Version</a></th>
         <td><a href="#slide9">9</a></td>
       </tr>
       
@@ -1290,80 +1561,116 @@ tox -e py26-1.4.X
       
       
       <tr id="toc-row-19">
-        <th><a href="#slide19">Configuring Settings for Your App</a></th>
+        <th><a href="#slide19">Sample Project Anti-Pattern</a></th>
         <td><a href="#slide19">19</a></td>
       </tr>
       
       
       <tr id="toc-row-20">
-        <th><a href="#slide20">Supercharge Your Tests with Tox</a></th>
+        <th><a href="#slide20">Test Only Models</a></th>
         <td><a href="#slide20">20</a></td>
       </tr>
       
       
       <tr id="toc-row-21">
-        <th><a href="#slide21">Basic Tox Configuration</a></th>
+        <th><a href="#slide21">Running App Tests (runtests.py)</a></th>
         <td><a href="#slide21">21</a></td>
       </tr>
       
       
       <tr id="toc-row-22">
-        <th><a href="#slide22">Why Bother?</a></th>
+        <th><a href="#slide22">Supercharge Your Tests with Tox</a></th>
         <td><a href="#slide22">22</a></td>
       </tr>
       
       
       <tr id="toc-row-23">
-        <th><a href="#slide23">State Your Goals</a></th>
+        <th><a href="#slide23">Basic Tox Configuration</a></th>
         <td><a href="#slide23">23</a></td>
       </tr>
       
       
       <tr id="toc-row-24">
-        <th><a href="#slide24">Include a License</a></th>
+        <th><a href="#slide24">Running Tox</a></th>
         <td><a href="#slide24">24</a></td>
       </tr>
       
       
       <tr id="toc-row-25">
-        <th><a href="#slide25">Prepare for The Future</a></th>
+        <th><a href="#slide25">App Template</a></th>
         <td><a href="#slide25">25</a></td>
       </tr>
       
       
       <tr id="toc-row-26">
-        <th><a href="#slide26">Rejecting Every Contribution</a></th>
+        <th><a href="#slide26">Why Bother?</a></th>
         <td><a href="#slide26">26</a></td>
       </tr>
       
       
       <tr id="toc-row-27">
-        <th><a href="#slide27">&quot;This needs tests and docs&quot;</a></th>
+        <th><a href="#slide27">Non-Code This To Do</a></th>
         <td><a href="#slide27">27</a></td>
       </tr>
       
       
       <tr id="toc-row-28">
-        <th><a href="#slide28">Accepting Every Contribution</a></th>
+        <th><a href="#slide28">State Your Goals</a></th>
         <td><a href="#slide28">28</a></td>
       </tr>
       
       
       <tr id="toc-row-29">
-        <th><a href="#slide29">Developer Burnout</a></th>
+        <th><a href="#slide29">Include a License</a></th>
         <td><a href="#slide29">29</a></td>
       </tr>
       
       
       <tr id="toc-row-30">
-        <th><a href="#slide30">Photos Credits</a></th>
+        <th><a href="#slide30">Prepare for The Future</a></th>
         <td><a href="#slide30">30</a></td>
       </tr>
       
       
       <tr id="toc-row-31">
-        <th><a href="#slide31">Slide Info</a></th>
+        <th><a href="#slide31">Non-Code This To Avoid</a></th>
         <td><a href="#slide31">31</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-32">
+        <th><a href="#slide32">Rejecting Every Contribution</a></th>
+        <td><a href="#slide32">32</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-33">
+        <th><a href="#slide33">&quot;This needs tests and docs&quot;</a></th>
+        <td><a href="#slide33">33</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-34">
+        <th><a href="#slide34">Accepting Every Contribution</a></th>
+        <td><a href="#slide34">34</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-35">
+        <th><a href="#slide35">Developer Burnout</a></th>
+        <td><a href="#slide35">35</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-36">
+        <th><a href="#slide36">Info</a></th>
+        <td><a href="#slide36">36</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-37">
+        <th><a href="#slide37">Photo Credits</a></th>
+        <td><a href="#slide37">37</a></td>
       </tr>
       
       
