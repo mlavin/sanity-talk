@@ -6,8 +6,6 @@ While Maintaining Your Open Source App
 
 Mark Lavin
 
-Caktus Consulting Group
-
 ----
 
 What This Talk is About
@@ -36,6 +34,7 @@ Apps I've Open Sourced
 - django-all-access
 - django-scribbler
 - django-responsive
+- django-hilbert
 - django-lastfm-auth
 - django-meetup-auth
 
@@ -72,21 +71,6 @@ Packaging
 
 ----
 
-Application Version
--------------------------------------------------
-
-- Follow PEP386
-- Try to be consistent in what your versions mean (new features/bug fixes)
-
-.. code-block:: python
-
-    # something.__init__.py
-    "Short description of django-something."
-
-    __version__ = '1.0.0'
-
-----
-
 Setup.py
 -------------------------------------------------
 
@@ -117,7 +101,23 @@ Setup.py
             'Operating System :: OS Independent',
         ],
         long_description=open('README.rst').read(),
+        zip_safe=False, # If you have static resources
     )
+
+----
+
+Application Version
+-------------------------------------------------
+
+- Follow PEP386
+- Try to be consistent in what your versions mean (new features/bug fixes)
+
+.. code-block:: python
+
+    # something.__init__.py
+    "Short description of django-something."
+
+    __version__ = '1.0.0'
 
 ----
 
@@ -146,6 +146,8 @@ Register and Upload Your Package
     # Update version
     python setup.py sdist upload
 
+That's it!
+
 ----
 
 Documentation
@@ -163,13 +165,25 @@ Getting Started with Sphinx
 - Auto-docs are not documentation
 - Also don't need to be perfect but you need a starting point
 
+Presenter Notes
+---------------
+
+- People will help you write better docs but they won't start them for you
+
 ----
 
 Laying Out Your Docs
 -------------------------------------------------
 
-- Create a ``docs`` directory in your repo
 - ``sphinx-quickstart`` has fairly sane defaults
+
+.. code-block:: bash
+
+    $ sphinx-quickstart
+    ...
+    Enter the root path for documentation.
+    > Root path for the documentation [.]: docs
+    ...
 
 ----
 
@@ -179,7 +193,7 @@ Things to Document
 - A description of the project and its goals
 - How to install including requirements
 - How to configure
-- Change log/Release notes
+- Release notes
 
 ----
 
@@ -189,7 +203,12 @@ Hosting Your Docs on Read the Docs
 - Create an account
 - Link to your repo
 - Setup post-commit hook
-- *Magic*
+- Pulls your tags/branches for different versions
+
+Presenter Notes
+---------------
+
+- Django's docs are built here too
 
 ----
 
@@ -225,6 +244,7 @@ Presenter Notes
 ---------------
 
 - Therefore your tests must run without it
+- People seem to do this because they need models
 
 ----
 
@@ -242,11 +262,12 @@ This approach is already used for Django's own test suite in ``contrib.contentty
 Presenter Notes
 ---------------
 
+- This is used by django-selectable
 - If this changes you'll know because you're going to have a test suite
 
 ----
 
-Configuring Settings for Your App
+Running App Tests (runtests.py)
 -------------------------------------------------
 
 .. code-block:: python
@@ -290,11 +311,20 @@ Supercharge Your Tests with Tox
 - Test different Python versions
 - Test different Django versions
 - Test different DB backends
+- http://tox.readthedocs.org/
+
+Install tox
+
+.. code-block:: bash
+
+    pip install tox
 
 ----
 
 Basic Tox Configuration
 -------------------------------------------------
+
+Configure tox.ini
 
 .. code-block:: guess
 
@@ -313,14 +343,26 @@ Basic Tox Configuration
     basepython = python2.6
     deps = django>=1.3,<1.4
 
-Running tox
+----
+
+Running Tox
+-------------------------------------------------
 
 .. code-block:: bash
 
     # All environments
-    tox
+    $ tox
+    ...
+    [TOX] py26-1.4.X: commands succeeded
+    [TOX] py26-1.3.X: commands succeeded
     # Only 1.4 on Python 2.6
-    tox -e py26-1.4.X
+    $ tox -e py26-1.4.X
+
+
+Presenter Notes
+---------------
+
+- You can also use tox to build your documentation
 
 ----
 
@@ -403,9 +445,16 @@ Photos Credits
 
 ----
 
-Slide Info
+Info
 -------------------------------------------------
+
+Slides
 
 - HTML: http://mlavin.github.com/sanity-talk/
 - Source: https://github.com/mlavin/sanity-talk
+
+Me
+
+- Github: https://github.com/mlavin/
+- Bitbucket: https://bitbucket.com/mlavin/
 
