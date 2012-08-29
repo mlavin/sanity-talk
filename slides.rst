@@ -14,7 +14,7 @@ What This Talk is About
 Things that you won't find in the Django docs like
 
 - Packaging an app
-- Documentating an app
+- Documenting an app
 - Testing an app
 
 ----
@@ -71,12 +71,21 @@ Packaging
 
 ----
 
-Packaging
+Packaging Insanity
 -------------------------------------------------
 
-- It can seem complicated the first time
-- It doesn't need to be perfect
-- It just needs to work
+    This app is so easy to install! You just checkout out the repo then add the
+app source directory to your Python path.
+
+    -- Noone ever
+
+----
+
+Packaging Sanity
+-------------------------------------------------
+
+- Package your app to work with pip (setuptools/distribute)
+- Direct potential users to install with pip
 
 ----
 
@@ -96,7 +105,7 @@ Setup.py
         include_package_data=True,
         url='https://github.com/mlavin/django-something',
         license='BSD',
-        description=u' '.join(__import__('something').__doc__.splitlines()).strip(),
+        description=u'An app which does something',
         classifiers=[
             'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
             'Intended Audience :: Developers',
@@ -155,8 +164,6 @@ Register and Upload Your Package
     # Update version
     python setup.py sdist upload
 
-That's it!
-
 ----
 
 Documentation
@@ -167,21 +174,30 @@ Documentation
 
 ----
 
-Getting Started with Sphinx
+Documentation Insanity
 -------------------------------------------------
 
-- A README is not documentation
-- Auto-docs are not documentation
-- Also don't need to be perfect but you need a starting point
+- A giant README
+- Pure Auto-docs
+- Docs which aren't available online
 
 Presenter Notes
 ---------------
 
-- People will help you write better docs but they won't start them for you
+- Python is very readable. Docs should describe what your source can't
+- If users can find your docs they might as well not exits
+- If users don't read them then you are wasting your time writing them
 
 ----
 
-Laying Out Your Docs
+Documentation Sanity
+-------------------------------------------------
+
+- Sphinx & Read the Docs
+
+----
+
+Getting Started with Sphinx
 -------------------------------------------------
 
 ``sphinx-quickstart`` has fairly sane defaults
@@ -203,6 +219,11 @@ Things to Document
 - How to install including requirements
 - How to configure
 - Release notes
+
+Presenter Notes
+---------------
+
+- Writing docs keeps you sane because you get a second pass at thinking about features
 
 ----
 
@@ -229,7 +250,22 @@ Testing
 
 ----
 
-Running Your App Tests
+Testing Insanity
+-------------------------------------------------
+
+- Tests which fail without an example project
+- Tests which fail when setting change
+
+Presenter Notes
+---------------
+
+- Tests should ship with your app
+- An example project should not
+- Hard to shelter tests (even Django gets this wrong sometimes)
+
+----
+
+Testing Sanity
 -------------------------------------------------
 
 - Running tests needs to be easy
@@ -238,23 +274,7 @@ Running Your App Tests
 Presenter Notes
 ---------------
 
-Or else no one (including you) will run them
-
-----
-
-Sample Project Anti-Pattern
--------------------------------------------------
-
-- Tests should ship with your app
-- An example project should not
-
-...Therefore your tests must run without it
-
-Presenter Notes
----------------
-
-- Therefore your tests must run without it
-- People seem to do this because they need models
+- Or else no one (including you) will run them
 
 ----
 
@@ -416,6 +436,13 @@ Prepare for The Future
 - Be ready for Python 3
 - Be ready to be replaced (yourself or your code)
 
+Presenter Notes
+---------------
+
+- Tox helps with the first two
+- Who could take over this app if you stopped
+- If you deleted this app which comparable one would you use
+
 ----
 
 Non-Code This To Avoid
@@ -485,6 +512,17 @@ Presenter Notes
 
 ----
 
+Photo Credits
+-------------------------------------------------
+
+- http://www.flickr.com/photos/feesta/1411998505/
+- http://www.flickr.com/photos/plindberg/4294079/
+- http://www.flickr.com/photos/snre/6946913449/
+- http://www.flickr.com/photos/booleansplit/3944131005/
+- http://www.flickr.com/photos/jmarty/3415590901/
+
+----
+
 Info
 -------------------------------------------------
 
@@ -497,15 +535,4 @@ Me
 
 - Github: https://github.com/mlavin/
 - Bitbucket: https://bitbucket.com/mlavin/
-
-----
-
-Photo Credits
--------------------------------------------------
-
-- http://www.flickr.com/photos/feesta/1411998505/
-- http://www.flickr.com/photos/plindberg/4294079/
-- http://www.flickr.com/photos/snre/6946913449/
-- http://www.flickr.com/photos/booleansplit/3944131005/
-- http://www.flickr.com/photos/jmarty/3415590901/
 
