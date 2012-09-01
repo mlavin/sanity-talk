@@ -69,15 +69,16 @@ Packaging
 .. image:: ./images/1411998505_20c38def70_z.jpg
     :align: center
 
+http://www.flickr.com/photos/feesta/1411998505/
+
 ----
 
 Packaging Insanity
 -------------------------------------------------
 
-    This app is so easy to install! You just checkout out the repo then add the
-app source directory to your Python path.
+    This app is so easy to install! You just checkout out the repo then add the app source directory to your Python path.
 
-    -- Noone ever
+    -- No one ever
 
 ----
 
@@ -172,13 +173,14 @@ Documentation
 .. image:: ./images/4294079_e959b6104d.jpg
     :align: center
 
+http://www.flickr.com/photos/plindberg/4294079/
+
 ----
 
 Documentation Insanity
 -------------------------------------------------
 
 - A giant README
-- Pure Auto-docs
 - Docs which aren't available online
 
 Presenter Notes
@@ -248,13 +250,15 @@ Testing
 .. image:: ./images/6946913449_e8ac6ff7d7_z.jpg
     :align: center
 
+http://www.flickr.com/photos/snre/6946913449/
+
 ----
 
 Testing Insanity
 -------------------------------------------------
 
 - Tests which fail without an example project
-- Tests which fail when setting change
+- Tests which fail when settings change
 
 Presenter Notes
 ---------------
@@ -343,11 +347,11 @@ Install tox
 
     pip install tox
 
-- Tox uses virtualenv to run a test matrix
+Tox uses virtualenv to run a test matrix
+
 - Test different Python versions
 - Test different Django versions
 - Test different DB backends
-- http://tox.readthedocs.org/
 
 ----
 
@@ -411,6 +415,8 @@ Non-Code This To Do
 .. image:: ./images/3944131005_d0563d76ac.jpg
     :align: center
 
+http://www.flickr.com/photos/booleansplit/3944131005/
+
 ----
 
 State Your Goals
@@ -424,7 +430,8 @@ State Your Goals
 Include a License
 -------------------------------------------------
 
-- There are plenty of good ones, just pick one
+- There are plenty of good ones
+- See OSI list if you aren't sure which to use http://opensource.org/licenses/index.html
 - Let people know what they can (and can't) do with the code
 
 ----
@@ -450,6 +457,8 @@ Non-Code This To Avoid
 
 .. image:: ./images/3415590901_b3fb25fcca.jpg
     :align: center
+
+http://www.flickr.com/photos/jmarty/3415590901/
 
 ----
 
@@ -512,14 +521,16 @@ Presenter Notes
 
 ----
 
-Photo Credits
+Resources
 -------------------------------------------------
 
-- http://www.flickr.com/photos/feesta/1411998505/
-- http://www.flickr.com/photos/plindberg/4294079/
-- http://www.flickr.com/photos/snre/6946913449/
-- http://www.flickr.com/photos/booleansplit/3944131005/
-- http://www.flickr.com/photos/jmarty/3415590901/
+- Packaging Guide: http://guide.python-distribute.org/
+- PyPi Signup: http://pypi.python.org/pypi?%3Aaction=register_form
+- PyPi Classifiers: http://pypi.python.org/pypi?%3Aaction=list_classifiers
+- Sphinx: http://sphinx.pocoo.org/
+- Read the Docs: http://readthedocs.org/
+- Tox: http://tox.readthedocs.org/
+- OSI License Info: http://opensource.org/licenses/index.html
 
 ----
 
