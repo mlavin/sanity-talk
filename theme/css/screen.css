@@ -340,6 +340,9 @@ a {
 pre {
   font-size: 16px;
   font-family: Monaco, Courier, monospace;
+  background-color: #ffffff;
+  border: 1px solid;
+  padding: 2px;
 }
 
 li {
