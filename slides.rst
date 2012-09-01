@@ -26,6 +26,7 @@ Who Am I?
 
 .. image:: ./images/caktus-logo.png
     :align: center
+    :height: 200px 
 
 - Founder/Developer for brewedbyus.com
 
@@ -55,6 +56,10 @@ Non-Work Me
 - Husband/Dad
 - Runner/Triathlete
 - Homebrewer
+
+.. image:: ./images/20120714-_DSC5334.jpg
+    :align: center
+    :height: 407px 
 
 Presenter Notes
 ---------------
@@ -197,6 +202,9 @@ Documentation Sanity
 
 - Sphinx & Read the Docs
 
+.. image:: ./images/read-the-docs.png
+    :align: center
+
 ----
 
 Getting Started with Sphinx
@@ -211,6 +219,23 @@ Getting Started with Sphinx
     Enter the root path for documentation.
     > Root path for the documentation [.]: docs
     ...
+
+Repo will look something like this
+
+.. code-block:: bash
+
+    docs\
+        conf.py
+        index.rst
+        make.bat
+        MakeFile
+    something\
+        __init__.py
+        models.py
+        tests.py
+        views.py
+    README.rst
+    setup.py
 
 ----
 
