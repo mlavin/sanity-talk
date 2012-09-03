@@ -397,6 +397,11 @@ Running App Tests (runtests.py)
     if __name__ == '__main__':
         runtests()
 
+Presenter Notes
+---------------
+
+- Loosely based on https://github.com/brosner/django-app-test-runner
+
 ----
 
 Supercharge Your Tests with Tox
