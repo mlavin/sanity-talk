@@ -87,7 +87,7 @@
             <header><h1>What This Talk is About</h1></header>
             
             
-            <section><p>Things that you won't find in the Django docs like</p>
+            <section><p>Things that you won't find in the Django docs about writing an app</p>
 <ul class="simple">
 <li>Packaging an app</li>
 <li>Documenting an app</li>
@@ -129,12 +129,19 @@
 <ul class="simple">
 <li>Founder/Developer for brewedbyus.com</li>
 </ul>
-<img alt="./images/bbus-logo.png" class="align-center" src="./images/bbus-logo.png" /></section>
+<img alt="./images/bbus-logo.png" class="align-center" src="./images/bbus-logo.png" />
+
+
+</section>
             
           </div>
           <div class="presenter_notes">
             <header><h1>Presenter Notes</h1></header>
             <section>
+            
+              <ul class="simple">
+<li>I think this is where I'm supposed to convince you I know what I'm talking about</li>
+</ul>
             
             </section>
           </div>
@@ -317,12 +324,20 @@
             <section><ul class="simple">
 <li>Package your app to work with pip (setuptools/distribute)</li>
 <li>Direct potential users to install with pip</li>
-</ul></section>
+</ul>
+
+
+</section>
             
           </div>
           <div class="presenter_notes">
             <header><h1>Presenter Notes</h1></header>
             <section>
+            
+              <ul class="simple">
+<li>Keep the installation instructions simple and don't give choices</li>
+<li><cite>pip install django-something</cite></li>
+</ul>
             
             </section>
           </div>
@@ -374,12 +389,20 @@
     <span class="n">long_description</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s">&#39;README.rst&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span>
     <span class="n">zip_safe</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="c"># If you have static resources</span>
 <span class="p">)</span>
-</pre></section>
+</pre>
+
+
+</section>
             
           </div>
           <div class="presenter_notes">
             <header><h1>Presenter Notes</h1></header>
             <section>
+            
+              <ul class="simple">
+<li>It's pretty readable when you look at it</li>
+<li>Full list of classifiers is available on the PyPi site</li>
+</ul>
             
             </section>
           </div>
@@ -484,12 +507,19 @@ python setup.py sdist upload
 <span class="c"># Write more docs</span>
 <span class="c"># Update version</span>
 python setup.py sdist upload
-</pre></section>
+</pre>
+
+
+</section>
             
           </div>
           <div class="presenter_notes">
             <header><h1>Presenter Notes</h1></header>
             <section>
+            
+              <ul class="simple">
+<li>Your package is now installable with pip!</li>
+</ul>
             
             </section>
           </div>
@@ -590,12 +620,21 @@ python setup.py sdist upload
             <section><ul class="simple">
 <li>Sphinx &amp; Read the Docs</li>
 </ul>
-<img alt="./images/read-the-docs.png" class="align-center" src="./images/read-the-docs.png" /></section>
+<img alt="./images/read-the-docs.png" class="align-center" src="./images/read-the-docs.png" />
+
+
+</section>
             
           </div>
           <div class="presenter_notes">
             <header><h1>Presenter Notes</h1></header>
             <section>
+            
+              <ul class="simple">
+<li>Keep your sanity by writing docs before you think you &quot;need&quot; them</li>
+<li>You will find yourself reading your own docs</li>
+<li>You will find better ways to do things when you have to explain how they work</li>
+</ul>
             
             </section>
           </div>
@@ -939,12 +978,19 @@ setup.py
 
 <span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&#39;__main__&#39;</span><span class="p">:</span>
     <span class="n">runtests</span><span class="p">()</span>
-</pre></section>
+</pre>
+
+
+</section>
             
           </div>
           <div class="presenter_notes">
             <header><h1>Presenter Notes</h1></header>
             <section>
+            
+              <ul class="simple">
+<li>Loosely based on <a class="reference external" href="https://github.com/brosner/django-app-test-runner">https://github.com/brosner/django-app-test-runner</a></li>
+</ul>
             
             </section>
           </div>
@@ -1101,12 +1147,19 @@ deps = django&gt;=1.3,&lt;1.4
 <li>These tools make it easy on you to write better code and docs</li>
 <li>And make it easier for others to help you</li>
 <li>Give contributors a starting point for more docs and tests</li>
-</ul></section>
+</ul>
+
+
+</section>
             
           </div>
           <div class="presenter_notes">
             <header><h1>Presenter Notes</h1></header>
             <section>
+            
+              <ul class="simple">
+<li>Keep your sanity by having them in place before you think you'll need them</li>
+</ul>
             
             </section>
           </div>
@@ -1306,12 +1359,19 @@ deps = django&gt;=1.3,&lt;1.4
             <section><ul class="simple">
 <li>Don't make it impossible for people to help you</li>
 <li>If you have to reject a request be nice</li>
-</ul></section>
+</ul>
+
+
+</section>
             
           </div>
           <div class="presenter_notes">
             <header><h1>Presenter Notes</h1></header>
             <section>
+            
+              <ul class="simple">
+<li>Keep your sanity by letting people help you</li>
+</ul>
             
             </section>
           </div>
@@ -1377,12 +1437,19 @@ deps = django&gt;=1.3,&lt;1.4
             <section><ul class="simple">
 <li>Adding features is easy but taking them away is hard</li>
 <li>If you accept it you should be prepared to maintain it</li>
-</ul></section>
+</ul>
+
+
+</section>
             
           </div>
           <div class="presenter_notes">
             <header><h1>Presenter Notes</h1></header>
             <section>
+            
+              <ul class="simple">
+<li>Keep your sanity by limiting your project scope</li>
+</ul>
             
             </section>
           </div>
