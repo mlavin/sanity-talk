@@ -48,6 +48,13 @@ Apps I've Open Sourced
 - django-lastfm-auth
 - django-meetup-auth
 
+Presenter Notes
+---------------
+
+- Not everyone of these projects fits these perfectly
+- These are ideas which have evolved from releasing more app
+- Some of these things I wish I had done sooner
+
 ----
 
 Non-Work Me
@@ -64,7 +71,7 @@ Non-Work Me
 Presenter Notes
 ---------------
 
-- This is also about how to do it all
+- These tools help you manage your time better
 
 ----
 
@@ -422,6 +429,7 @@ Presenter Notes
 ---------------
 
 - You can also use tox to build your documentation
+- That way you'll know if they are broken prior to the Read the Docs build
 
 ----
 
