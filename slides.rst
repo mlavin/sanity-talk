@@ -11,7 +11,7 @@ Mark Lavin
 What This Talk is About
 -------------------------------------------------
 
-Things that you won't find in the Django docs like
+Things that you won't find in the Django docs about writing an app
 
 - Packaging an app
 - Documenting an app
@@ -32,6 +32,11 @@ Who Am I?
 
 .. image:: ./images/bbus-logo.png
     :align: center
+
+Presenter Notes
+---------------
+
+- I think this is where I'm supposed to convince you I know what I'm talking about
 
 ----
 
@@ -100,6 +105,12 @@ Packaging Sanity
 - Package your app to work with pip (setuptools/distribute)
 - Direct potential users to install with pip
 
+Presenter Notes
+---------------
+
+- Keep the installation instructions simple and don't give choices
+- `pip install django-something`
+
 ----
 
 Setup.py
@@ -134,6 +145,12 @@ Setup.py
         long_description=open('README.rst').read(),
         zip_safe=False, # If you have static resources
     )
+
+Presenter Notes
+---------------
+
+- It's pretty readable when you look at it
+- Full list of classifiers is available on the PyPi site
 
 ----
 
@@ -177,6 +194,11 @@ Register and Upload Your Package
     # Update version
     python setup.py sdist upload
 
+Presenter Notes
+---------------
+
+- Your package is now installable with pip!
+
 ----
 
 Documentation
@@ -211,6 +233,13 @@ Documentation Sanity
 
 .. image:: ./images/read-the-docs.png
     :align: center
+
+Presenter Notes
+---------------
+
+- Keep your sanity by writing docs before you think you "need" them
+- You will find yourself reading your own docs
+- You will find better ways to do things when you have to explain how they work
 
 ----
 
@@ -440,6 +469,11 @@ Why Bother?
 - And make it easier for others to help you
 - Give contributors a starting point for more docs and tests
 
+Presenter Notes
+---------------
+
+- Keep your sanity by having them in place before you think you'll need them
+
 ----
 
 Non-Code This To Do
@@ -501,6 +535,11 @@ Rejecting Every Contribution
 - Don't make it impossible for people to help you
 - If you have to reject a request be nice
 
+Presenter Notes
+---------------
+
+- Keep your sanity by letting people help you
+
 ----
 
 "This needs tests and docs"
@@ -522,6 +561,12 @@ Accepting Every Contribution
 
 - Adding features is easy but taking them away is hard
 - If you accept it you should be prepared to maintain it
+
+
+Presenter Notes
+---------------
+
+- Keep your sanity by limiting your project scope
 
 ----
 
