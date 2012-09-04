@@ -221,7 +221,7 @@ Presenter Notes
 ---------------
 
 - Python is very readable. Docs should describe what your source can't
-- If users can find your docs they might as well not exits
+- If users can find your docs they might as well not exist
 - If users don't read them then you are wasting your time writing them
 
 ----
@@ -287,6 +287,7 @@ Presenter Notes
 ---------------
 
 - Writing docs keeps you sane because you get a second pass at thinking about features
+- Good documentation can answer questions from users before they ask you
 
 ----
 
@@ -443,6 +444,11 @@ Configure tox.ini
     basepython = python2.6
     deps = django>=1.3,<1.4
 
+Presenter Notes
+---------------
+
+- Easy to jump to new Python/Django features and break compatibility
+
 ----
 
 Running Tox
@@ -481,7 +487,7 @@ Presenter Notes
 
 ----
 
-Non-Code This To Do
+Non-Code Things To Do
 -------------------------------------------------
 
 .. image:: ./images/3944131005_d0563d76ac.jpg
@@ -496,6 +502,12 @@ State Your Goals
 
 - Let people know the problem you were trying to solve
 - Let people know the problems you aren't interested in solving
+
+Presenter Notes
+---------------
+
+- Not interested because it's not part of your main use case
+- Not interested because solved by another project
 
 ----
 
@@ -524,7 +536,7 @@ Presenter Notes
 
 ----
 
-Non-Code This To Avoid
+Non-Code Things To Avoid
 -------------------------------------------------
 
 .. image:: ./images/3415590901_b3fb25fcca.jpg
